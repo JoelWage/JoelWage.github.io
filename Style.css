@@ -1,7 +1,6 @@
 /* Make each section appear as a box */
 header, nav, main, aside, footer {
   background-color: #06a0f9; /* light background for boxes */
-  border: 1px solid #ccc;    /* subtle border */
   border-radius: 8px;        /* rounded corners */
   padding: 20px;             /* space inside the box */
   margin: 15px auto;         /* separation from other boxes */
@@ -160,10 +159,9 @@ nav ul li a.active {
 }
 
 .study-menu li a:hover {
-  background-color: #fc0202;
+  background-color: #0cba15;
 }
 aside {
-                /* Float aside to the left */
   width: 220px;              /* Fixed width for sidebar */
   background-color: #04a2fe;
   padding: 15px;
@@ -171,17 +169,13 @@ aside {
   border: 1px solid #ccc;
   height: auto;             /* Full viewport height */
   position: absolute;           /* Make it sticky on scroll */
-  top: 0;
+  top: 100px;
   left: 0;
   overflow-y: hidden;          /* Scroll if content is long */
   overflow-x: hidden;
 }
 
 main {
-  margin-right: 500px;  /* Space for aside */
   padding: 20px;
-  box-sizing: border-box;
-  /* Do NOT float main */
-  /* Make sure it fills available width */
   width: calc(100% - 240px);
 }
