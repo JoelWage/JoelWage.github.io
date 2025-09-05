@@ -1,0 +1,187 @@
+/* Make each section appear as a box */
+header, nav, main, aside, footer {
+  background-color: #06a0f9; /* light background for boxes */
+  border: 1px solid #ccc;    /* subtle border */
+  border-radius: 8px;        /* rounded corners */
+  padding: 20px;             /* space inside the box */
+  margin: 15px auto;         /* separation from other boxes */
+  max-width: 900px;          /* limit box width */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* a soft shadow */
+}
+
+/* Stack the main content and aside vertically */
+main {
+  display: block;
+  padding: 0; /* padding handled by main and aside boxes themselves */
+}
+
+/* Style article and aside for separate boxes */
+article, aside {
+  background-color: rgb(7, 180, 254);
+  border: 1px solid #0a0000;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.05);
+}
+
+
+
+.box {
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: #04b1fb;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(194, 102, 102, 0.1);
+}
+body, main {
+    background-color:rgb(5, 148, 250);
+}
+main {
+    color:rgb(15, 2, 2)
+}
+nav a.active {
+  background-color: #fd1804; /* Distinct color for active */
+  color: white;
+  font-weight: bold;
+}
+.profile-page .intro-box {
+  max-width: 400px;
+  border: 2px solid #0077cc;
+  border-radius: 8px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f8fc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  margin: 20px auto;
+}
+
+/* Other CSS selectors specific to profile page */
+.profile-page h2 {
+  color: #0077cc;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  border-bottom: 1px solid #0077cc;
+  padding-bottom: 5px;
+}
+
+.profile-page p, .profile-page ul {
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  color: #333;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  z-index: 9999;
+  left: 0;
+  padding: 10px 0;
+}
+
+.navbar.top {
+  top: 0;
+}
+
+.navbar.bottom {
+  bottom: 0;
+}
+/* styles.css file */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center the links */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+nav ul li a.active {
+  background-color: #04AA6D;
+  border-radius: 4px;
+}
+.study-menu {
+  list-style-type: none;  /* Remove bullets */
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  background-color: #049cfb;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.study-menu li {
+  border-bottom: 1px solid #ddd;
+}
+
+.study-menu li:last-child {
+  border-bottom: none;
+}
+
+.study-menu li a {
+  display: block;
+  color: #000208;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.study-menu li a:hover {
+  background-color: #fc0202;
+}
+aside {
+                /* Float aside to the left */
+  width: 220px;              /* Fixed width for sidebar */
+  background-color: #04a2fe;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  height: auto;             /* Full viewport height */
+  position: absolute;           /* Make it sticky on scroll */
+  top: 0;
+  left: 0;
+  overflow-y: hidden;          /* Scroll if content is long */
+  overflow-x: hidden;
+}
+
+main {
+  margin-right: 500px;  /* Space for aside */
+  padding: 20px;
+  box-sizing: border-box;
+  /* Do NOT float main */
+  /* Make sure it fills available width */
+  width: calc(100% - 240px);
+}
