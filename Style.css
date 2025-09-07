@@ -179,3 +179,29 @@ main {
   padding: 20px;
   width: calc(100% - 240px);
 }
+.box {
+  display: flex;
+  gap: 20px;
+  background-color: #00bfff;
+  padding: 20px;
+  align-items: flex-start;
+  max-width: 900px;
+  color: black;
+}
+
+/* Zorg dat de tekst en koppen netjes in een aparte kolom komen */
+.box h1 {
+  flex-basis: 100%;
+}
+
+/* Maak een container voor de tekst zodat de tekst items netjes naast de foto staan */
+.box ol, .box h2, .box h3 {
+  margin: 0;
+  padding-left: 0;
+}
+
+.box img {
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+
