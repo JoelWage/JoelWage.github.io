@@ -3,67 +3,157 @@
 
 <head>
   <link rel="stylesheet" href="Style.css">
-  <link rel="stylesheet" href="dashboard.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  Program and Career Orientation CU75001V3 - 2025/2026
-  5 / 39
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>your-title-here</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title></title>
 </head>
 
 <body>
   <aside>
     <ul class="study-menu">
-      <li><a href="https://learn.hz.nl/" target="_blank" rel="noopener noreferrer">HZ University of Applied Sciences</a>
-      </li>
+      <li><a href="https://learn.hz.nl/" target="_blank" rel="noopener noreferrer">HZ University of Applied Sciences</a></li>
       <li><a href="https://www.scalda.nl/en" target="_blank" rel="noopener noreferrer">Scalda College</a></li>
       <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a></li>
       <li><a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer">Codecademy</a></li>
       <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
     </ul>
   </aside>
+  <span id="ec-earned">1</span>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="profile.html">profile</a></li>
+      <li><a href="dashboard.html" class="active">dashboard</a></li>
+      <li><a href="faq.html">faq</a></li>
+      <li><a href="blog.html">blog</a></li>
+    </ul>
+  </nav>
+<div class="grade-box passed">5.5</div>      <!-- Grade is 8.0 and marked as passed -->
+<div class="grade-box insufficient">5.0</div> <!-- Grade is 5.0 but marked insufficient -->
+<div class="grade-box pending">Pending</div>  <!-- Grade is pending -->
+
   <div class="dashboard">
-    <h1>HZ HBO-ICT First-Year Dashboard</h1>
-    <div class="progress-container">
-      <span>Credits Earned: <span id="ec-earned">36</span>/60 EC</span>
-      <div class="progress-bar">
-        <div id="progress-earned" class="progress-earned"></div>
-        <div class="nbsa-boundary"></div>
-      </div>
-    </div>
-    <div class="quarters">
-      <div class="quarter">
-        <h2>Quarter 1</h2>
-        <div class="course">
-          <span class="course-name">Programming Fundamentals</span>
-          <div class="test passed">Exam – Grade: 8 – 5 EC</div>
-        </div>
-        <div class="course">
-          <span class="course-name">IT Personality</span>
-          <div class="test pending">Portfolio – Grade: Pending – 2.5 EC</div>
-        </div>
-      </div>
-      <div class="quarter">
-        <h2>Quarter 2</h2>
-        <div class="course">
-          <span class="course-name">Database Systems</span>
-          <div class="test insufficient">Exam – Grade: 4.8 – 5 EC</div>
-          <div class="test pending">Retake – To be scheduled</div>
-        </div>
+    <h1>HZ HBO-ICT Year 1 Exams & Credits 2025/2026</h1>
+    <button id="open-modal-btn">Add Grade/Credit</button>
+
+    <!-- Modal Form -->
+    <div id="form-modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="close-modal-btn" class="close">&times;</span>
+        <form id="grade-form" action="">
+          <label>Quarter:
+            <select name="quarter" required>
+              <option value="">Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </label><br />
+          <label>Course Name: <input type="text" name="course" required /></label><br />
+          <label>Test Type: <input type="text" name="test" required /></label><br />
+          <label>Grade: <input type="text" name="grade" required /></label><br />
+          <label>Credits (EC): <input type="number" name="ec" min="0" step="0.5" required /></label><br />
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="profile.html">profile</a></li>
-        <li><a href="dashboard.html" class="active">dashboard</a></li>
-        <li><a href="faq.html">faq</a></li>
-        <li><a href="blog.html">blog</a></li>
-      </ul>
-    </nav>
-    <h1>Hello World!</h1>
+    <div id="points-needed">Points needed: 60</div>
+    <div id="progress-percent">Completion: 0%</div>
+
+    <div class="progress-bar">
+      <div class="progress-earned" id="progress-earned"></div>
+    </div>
+    <label for="progress-input">Set Progress (points):</label>
+    <input type="number" id="progress-input" min="0" max="60" value="0" />
+    <button id="update-btn">Update Progress</button>
+
+    <table id="grades-table">
+      <thead>
+        <tr>
+          <th>Quarter</th>
+          <th>Course</th>
+          <th>Test</th>
+          <th>Grade</th>
+          <th>Credits (EC)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Quarter 1 -->
+        <tr>
+          <td>1</td>
+          <td>Programming Basics (PBA)</td>
+          <td>Exam</td>
+          <td><div class="grade-box pending">Pending</div></td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>IT Personality</td>
+          <td>Portfolio</td>
+          <td><div class="grade-box pending">Pending</div></td>
+          <td>2.5</td>
+        </tr>
+        <!-- Quarter 2 -->
+        <tr>
+          <td>2</td>
+          <td>Computer Science Basics (CSB)</td>
+          <td>Exam</td>
+          <td><div class="grade-box insufficient pending">Pending</div></td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Computer Science Basics (CSB)</td>
+          <td>retake</td>
+          <td><div class="grade-box pending">Pending</div></td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Software Development Principles</td>
+          <td>Project</td>
+          <td><div class="grade-box pending">Pending</div></td>
+          <td>6</td>
+        </tr>
+        <!-- Quarter 3 -->
+        <tr>
+          <td>3</td>
+          <td>Web Basics</td>
+          <td>Exam</td>
+          <td><div class="grade-box pending">Pending</div></td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Requirements Engineering</td>
+          <td>Portfolio</td>
+          <td><div class="grade-box pending">Pending</div></td>
+          <td>4</td>
+        </tr>
+        <!-- Quarter 4 -->
+        <tr>
+          <td>4</td>
+          <td>Introduction to Infrastructure</td>
+          <td>Exam</td>
+          <td><div class="grade-box pending">Pending</div></td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Object Oriented Programming (OOP)</td>
+          <td>Exam</td>
+          <td><div class="grade-box passed">8.0</div></td>
+          <td>5</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="dashboard.js" defer></script>
 </body>
 
 </html>

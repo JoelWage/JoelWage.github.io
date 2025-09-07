@@ -80,6 +80,7 @@ nav a.active {
   z-index: 9999;
   left: 0;
   padding: 10px 0;
+  justify-content: center;
 }
 
 .navbar.top {
@@ -205,3 +206,18 @@ main {
   border-radius: 5px;
 }
 
+.progress-bar {
+  position: relative;
+  background: #eee;
+  height: 30px;
+  border-radius: 15px;
+  overflow: hidden; /* Add this */
+  margin-top: 8px;
+}
+.progress-earned {
+  background-color: #4caf50;
+  height: 100%;
+  width: 50px;
+  border-radius: 15px 0 0 15px;
+  transition: width 0.5s ease;
+}
