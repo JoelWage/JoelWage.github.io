@@ -2,89 +2,140 @@
 <html lang="en">
 
 <head>
-   
-  <link rel="stylesheet" href="faq.css" />
-   
+
+  <link rel="stylesheet" href="css/faq.css" />
+
   <link rel="stylesheet" href="Style.css">
-   
+
   <meta charset="UTF-8">
-   
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FAQ - HZ University</title>
+  <title>FAQ - HZ University</title>
+
 </head>
 
 <body>
-    <aside>
-        <ul class="study-menu">
-            <li><a href="https://learn.hz.nl/" target="_blank" rel="noopener noreferrer">HZ University of Applied
-          Sciences</a></li>
-            <li><a href="https://www.scalda.nl/en" target="_blank" rel="noopener noreferrer">Scalda College</a></li>
-            <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a></li>
-            <li><a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer">Codecademy</a></li>
-            <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
-          </ul>
-      </aside>
+  <aside>
+    <ul class="study-menu">
+      <li><a href="https://learn.hz.nl/" target="_blank" rel="noopener noreferrer">HZ University of Applied Sciences</a>
+      </li>
+      <li><a href="https://www.scalda.nl/en" target="_blank" rel="noopener noreferrer">Scalda College</a></li>
+      <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a></li>
+      <li><a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer">Codecademy</a></li>
+      <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+    </ul>
+  </aside>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="profile.html">profile</a></li>
-            <li><a href="dashboard.html">dashboard</a></li>
-            <li><a href="faq.html" class="active">faq</a></li>
-            <li><a href="blog.html">blog</a></li>
-          </ul>
-      </nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="profile.html">profile</a></li>
+      <li><a href="dashboard.html">dashboard</a></li>
+      <li><a href="faq.html" class="active">faq</a></li>
+      <li><a href="blog.html">blog</a></li>
+    </ul>
+  </nav>
 
-    <div class="accordion-container">
-        <h2 style="text-align:center;">Frequently Asked Questions</h2>
+  <div class="accordion-container">
+    <h2>Frequently Asked Questions</h2>
 
-        <div class="accordion-item">
-            <input type="checkbox" id="q1" />
-            <label for="q1">1. How can you print a document from your laptop at HZ?</label>
-            <div class="content">
-                <p>Use your HZ student card at designated printing stations around campus. Upload your files to the HZ
-          print service and confirm printing with your card.</p>
-              </div>
-          </div>
+    <details>
+      <summary>1. How can you print a document from your laptop at HZ?</summary>
+      <ol>
+        <p>
+          <li>je laptop met het HZ Wi-Fi netwerk op de campus.</li>
 
-        <div class="accordion-item">
-            <input type="checkbox" id="q2" />
-            <label for="q2">2. How can you scan a document and send it to your laptop at HZ?</label>
-            <div class="content">
-                <p>Use scanning facilities at multimedia library and Open Learning Centre. You can scan documents to
-          USB, email, or cloud storage accessible from your laptop.</p>
-              </div>
-          </div>
+          <li> je document via de HZ printservice (meestal via My.HZ of een speciale printportal) of stuur het naar een
+            netwerkprinter die verbonden is met het HZ-netwerk.</li>
 
-        <div class="accordion-item">
-            <input type="checkbox" id="q3" />
-            <label for="q3">3. How can I buy something (like IT introduction event) on the HZ web shop?</label>
-            <div class="content">
-                <p>Access the HZ webshop through the My.HZ portal. Payment is accepted via student card balance or other
-          provided payment methods.</p>
-              </div>
-          </div>
+          <li> naar een aangewezen printstation op de campus.</li>
 
-        <div class="accordion-item">
-            <input type="checkbox" id="q4" />
-            <label for="q4">4. How can you book a project space?</label>
-            <div class="content">
-                <p>Book project spaces via the internal HZ portal or by contacting facility management. Reservations may
-          be required in advance for popular spaces.</p>
-              </div>
-          </div>
+          <li> 4.Authenticateer jezelf bij het printstation met je HZ studentenkaart.</li>
 
-        <div class="accordion-item">
-            <input type="checkbox" id="q5" />
-            <label for="q5">5. What are the instructions if you want to park your car at the HZ parking lot?</label>
-            <div class="content">
-                <p>An HZ parking permit or guest pass is required. Use your student card for access. Adhere to parking
-          rules and designated zones.</p>
-              </div>
-          </div>
-      </div>
+          <li>5.Selecteer je printopdracht op het printstation en bevestig het printen.</li>
+        </p>
+      </ol>
+    </details>
+
+    <details>
+      <summary>2. How can you scan a document and send it to your laptop at HZ?</summary>
+      <p>
+      <ol>
+        <li>Meld jezelf aan op de printer met je HZ-pas of je HZ gebruikersnaam en wachtwoord.</li>
+        <li>Kies in het menu de optie Scan.</li>
+        <li>Leg de originele documenten op de feeder of de glazen plaat.</li>
+        <li>(Optioneel) Voor dubbelzijdig scannen: druk op Change settings en zet bij duplex mode de optie 2-sided aan.
+        </li>
+        <li>Druk op Start om het scannen te starten.</li>
+        <li>Na het scannen, kies een opslag- of verzendmethode:
+          <ul>
+            <li>Scannen naar USB-stick: haal je USB-stick uit de scanner en sluit die aan op je laptop om de bestanden
+              te openen.</li>
+            <li>Scannen naar e-mail: stuur het document naar je e-mailadres zodat je het vanaf je laptop kunt
+              downloaden.</li>
+            <li>Scannen naar cloudopslag (bijv. OneDrive): sla de scan op in de cloud, waarna je het via je laptop kunt
+              openen en downloaden.</li>
+          </ul>
+        </li>
+        <li>Meld jezelf af op het printermenu door op het aangegeven symbool te drukken.</li>
+      </ol>
+      </p>
+    </details>
+
+    <details>
+      <summary>3. How can I buy something (like IT introduction event) on the HZ web shop?</summary>
+      <p>
+      <ol>
+        <li>Ga naar het My.HZ-portaal met je inloggegevens die je van HZ hebt ontvangen.</li>
+        <li>Zoek in het portaal naar de sectie voor evenementen, introducties of de HZ-webshop.</li>
+        <li>Selecteer het IT-introductie-evenement of ander gewenst product/activiteit.</li>
+        <li>Volg de instructies voor registratie of aankoop. Dit kan het invullen van een formulier en het bevestigen
+          van je gegevens bevatten.</li>
+        <li>Kies een betaalmethode (bijvoorbeeld via studentenkaart saldo of andere aangeboden opties).</li>
+        <li>Rond de betaling af en bewaar je bevestiging.</li>
+        <li>Wacht op een e-mail of bericht van HZ ter bevestiging van je deelname of aankoop.</li>
+      </ol>
+      </p>
+    </details>
+
+    <details>
+      <summary>4. How can you book a project space?</summary>
+      <p>
+      <ol>
+        <li>Ga naar de startpagina van de Self Service Portal.</li>
+        <li>Klik op <strong>Reserveren</strong>.</li>
+        <li>Kies de juiste categorie en zoek het "middel" op wat je wilt reserveren. Maak eventueel gebruik van de
+          filter <em>Soort</em> om bepaalde items aan/uit te zetten in het overzicht.</li>
+        <li>Selecteer de dag wanneer het middel geleend wordt.</li>
+        <li>Geef, door te slepen met de linkermuisknop, de tijdsperiode aan wanneer het middel geleend wordt.</li>
+        <li>Klik op <strong>Volgende</strong>.</li>
+        <li>Lees de uitleenvoorwaarden, controleer de reservering en klik op <strong>Volgende</strong>.</li>
+        <li>Vul de nodige informatie aan en klik op <strong>Reservering bevestigen</strong>.</li>
+      </ol>
+      </p>
+    </details>
+
+    <details>
+      <summary>5. What are the instructions if you want to park your car at the HZ parking lot?</summary>
+      <p>
+      <ol>
+        <li>Het is niet mogelijk om direct bij de HZ aan Het Groene Woud te parkeren met de auto.</li>
+        <li>Er is één speciale parkeerplaats op het terrein voor mensen met een beperking en/of chronische aandoening.
+        </li>
+        <li>Bezoekers kunnen parkeren in de nabijgelegen parkeergarage aan de Kousteensedijk (8 minuten lopen van HZ).
+        </li>
+        <li>Bij het tonen van je inrijkaart kan je bij de servicebalie van het JRCZ een uitrijkaart ophalen.</li>
+        <li>Voor groepen vanaf 10 personen wordt gevraagd om te parkeren bij de parkeergarages Hof van Tange of Geere,
+          beide binnen 7 minuten lopen.</li>
+        <li>Het NS-station Middelburg ligt op ongeveer 10 minuten loopafstand van HZ en de parkeergarages.</li>
+        <li>Er is een ruime fietsenstalling naast de locatie voor bijna 400 fietsen.</li>
+        <li>Openbaar vervoer stopt dichtbij het gebouw (buslijnen 58 en 133).</li>
+      </ol>
+      </p>
+    </details>
+  </div>
 </body>
 
 </html>
