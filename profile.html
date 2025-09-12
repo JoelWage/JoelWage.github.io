@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <!-- Link to external CSS stylesheet -->
   <link rel="stylesheet" href="Style.css">
+  
+  <!-- Character encoding for the document -->
   <meta charset="UTF-8" />
+  
+  <!-- Responsive design viewport settings for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- IE compatibility mode setting -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <!-- Title of the webpage, shown in browser tab -->
   <title>My Profile</title>
 </head>
 
 <body class="profile-body">
+  <!-- Sidebar with study-related links -->
   <aside>
     <ul class="study-menu">
+      <!-- External links open in new tabs with security attributes -->
       <li><a href="https://learn.hz.nl/" target="_blank" rel="noopener noreferrer">HZ Learn</a></li>
       <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a></li>
       <li><a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer">Codecademy</a></li>
@@ -19,63 +29,70 @@
     </ul>
   </aside>
 
-
+  <!-- Navigation bar with links to different pages -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
+      <!-- Current active page is highlighted -->
       <li><a href="profile.html" class="active">Profile</a></li>
       <li><a href="dashboard.html">Dashboard</a></li>
       <li><a href="faq.html">Faq</a></li>
       <li><a href="blog.html">Blog</a></li>
     </ul>
   </nav>
+
+  <!-- Main content area -->
   <main>
     <article>
+      <!-- Box container with profile image and personal details -->
       <div class="box">
-        <img src="images/profiel.jpg.jpg" alt="A photo of me"width="200" />
+        <!-- Profile image with alt text -->
+        <img src="images/profiel.jpg.jpg" alt="A photo of me" width="200" />
+        
+        <!-- Section with textual profile information -->
         <div class="profile-text">
           <h2>Personal Information</h2>
           <h3>Short introduction about me.</h3>
+          
+          <!-- Ordered list with personal details -->
           <ol>
             <li><strong>Name:</strong> Joël Wagenaar</li>
             <li><strong>Age:</strong> 19 years old</li>
             <li><strong>Place:</strong> Oost-Souburg</li>
             <li><strong>Education:</strong> Before HZ I studied at Scalda for my IT diploma</li>
-            <li><strong>Career Goal:</strong> After this education, I want to work and get experience, so I can start my
-              own company</li>
+            <li><strong>Career Goal:</strong> After this education, I want to work and get experience, so I can start my own company</li>
             <li><strong>Contact Number:</strong> 0624705008</li>
             <li><strong>Email:</strong> wage0037@hz.nl</li>
           </ol>
+          
+          <!-- Link to GitHub profile, opens in new tab -->
           <p><a href="https://github.com/JoelWage" target="_blank" rel="noopener noreferrer">Mijn GitHub</a></p>
         </div>
       </div>
 
+      <!-- Section about personality and motivation -->
       <section>
         <div class="box">
           <h2>Personality Motivation</h2>
-        <p>
-  I love gaming, especially with titles like League of Legends and EA FC 25.<br>
-  In my free time I really enjoy watching series on Netflix because it can be so relaxing.<br>
-  The main reason I chose this study is that I want to help older people with their technology problems,<br>
-  but I want to be able to support them on an HBO thinking level so I can make a real difference for them.
-</p>
-
-
-
+          <p>
+            I love gaming, especially with titles like League of Legends and EA FC 25.<br>
+            In my free time I really enjoy watching series on Netflix because it can be so relaxing.<br>
+            The main reason I chose this study is that I want to help older people with their technology problems,<br>
+            but I want to be able to support them on an HBO thinking level so I can make a real difference for them.
+          </p>
         </div>
       </section>
 
+      <!-- Section about extra-curricular activities -->
       <section>
         <div class="box">
           <h2>Extra-curricular Activities</h2>
           <p>
-I have a part-time job besides school, and I also help older people with their computer problems through a small business I started myself. I recently started going to the gym to stay active. In the evening, I like to game because it helps me relax and I really enjoy it.
-</p>
-
+            I have a part-time job besides school, and I also help older people with their computer problems through a small business I started myself. I recently started going to the gym to stay active. In the evening, I like to game because it helps me relax and I really enjoy it.
+          </p>
         </div>
       </section>
     </article>
   </main>
 </body>
-
 </html>
