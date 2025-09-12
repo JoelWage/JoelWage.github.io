@@ -1,6 +1,6 @@
 /* Make each section appear as a box */
 header, nav, main, aside, footer {
-  background-color: #06a0f9; /* light background for boxes */
+  background-color: #06e1f9; /* light background for boxes */
   border-radius: 8px;        /* rounded corners */
   padding: 20px;             /* space inside the box */
   margin: 15px auto;         /* separation from other boxes */
@@ -16,7 +16,7 @@ main {
 
 /* Style article and aside for separate boxes */
 article, aside {
-  background-color: rgb(7, 180, 254);
+  background-color: rgb(7, 52, 254);
   border: 1px solid #0a0000;
   border-radius: 6px;
   padding: 15px;
@@ -31,12 +31,12 @@ article, aside {
   padding: 15px 20px;
   margin: 20px auto;
   max-width: 600px;
-  background-color: #04b1fb;
+  background-color: #050d11;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(194, 102, 102, 0.1);
 }
 body, main {
-    background-color:rgb(5, 148, 250);
+    background-color:rgb(13, 5, 250);
 }
 main {
     color:rgb(15, 2, 2)
@@ -48,7 +48,7 @@ nav a.active {
 }
 .profile-page .intro-box {
   max-width: 400px;
-  border: 2px solid #0077cc;
+  border: 2px solid #002ccc;
   border-radius: 8px;
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -164,7 +164,7 @@ nav ul li a.active {
 }
 aside {
   width: 220px;              /* Fixed width for sidebar */
-  background-color: #04a2fe;
+  background-color: #04c4fe;
   padding: 15px;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -183,10 +183,10 @@ main {
 .box {
   display: flex;
   gap: 20px;
-  background-color: #00bfff;
+  background-color: #062bfb;
   padding: 20px;
   align-items: flex-start;
-  max-width: 900px;
+  max-width: 1000px;
   color: black;
 }
 
@@ -220,4 +220,10 @@ main {
   width: 50px;
   border-radius: 15px 0 0 15px;
   transition: width 0.5s ease;
+}
+h1 {
+  text-align: center;
+}
+p {
+  line-height: 1.8; /* 1.8 times the font size */
 }
