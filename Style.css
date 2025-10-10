@@ -1,6 +1,6 @@
 /* Make each section appear as a box */
 header, nav, main, aside, footer {
-  background-color: #06e1f9; /* light background for boxes */
+  background-color: #efefef; /* light background for boxes */
   border-radius: 8px;        /* rounded corners */
   padding: 20px;             /* space inside the box */
   margin: 15px auto;         /* separation from other boxes */
@@ -137,7 +137,7 @@ nav ul li a.active {
   padding: 0;
   margin: 0;
   width: 200px;
-  background-color: #049cfb;
+  background-color: #0804fb;
   border: 1px solid #ccc;
   border-radius: 6px;
 }
@@ -164,7 +164,7 @@ nav ul li a.active {
 }
 aside {
   width: 220px;              /* Fixed width for sidebar */
-  background-color: #04c4fe;
+  background-color: #3204fe;
   padding: 15px;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -226,4 +226,8 @@ h1 {
 }
 p {
   line-height: 1.8; /* 1.8 times the font size */
+}
+
+a.custom-link {
+  color: red;    /* kies jouw kleur */
 }
