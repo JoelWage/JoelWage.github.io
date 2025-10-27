@@ -59,7 +59,7 @@ nav a.active {
 
 /* Other CSS selectors specific to profile page */
 .profile-page h2 {
-  color: #0077cc;
+  color: #00cc11;
   margin-bottom: 15px;
   font-size: 1.5em;
   border-bottom: 1px solid #0077cc;
@@ -70,7 +70,7 @@ nav a.active {
   font-size: 1em;
   line-height: 1.4;
   margin-bottom: 12px;
-  color: #333;
+  color: #37ff00a3;
 }
 .navbar {
   position: fixed;
