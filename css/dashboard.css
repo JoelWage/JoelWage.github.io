@@ -26,15 +26,15 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;               /* ✅ exactly viewport width */
+  width: 100%;               /*  exactly viewport width */
   background-color: #222;
   color: white;
   z-index: 9999;
-  display: flex;             /* ✅ centers the items properly */
+  display: flex;             /*  centers the items properly */
   justify-content: center;
   align-items: center;
   padding: 10px 0;
-  border-radius: 0;          /* ✅ removes rounded corners */
+  border-radius: 0;          /*  removes rounded corners */
   margin: 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* optional subtle shadow */
 }
@@ -150,6 +150,11 @@ th, td {
   border: 1px solid #cbd5e2;
   padding: 8px;
 }
+
+td {
+  color: #000000; /* example soft black/dark gray */
+}
+
 
 th {
   background: #e8f0ff;

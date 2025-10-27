@@ -1,3 +1,4 @@
+/* ======= GENERAL LAYOUT & BODY ======= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,14 +8,15 @@ body {
   padding: 40px;
 }
 
+/* ======= NAVIGATION BAR ======= */
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  max-width: 800px; /* or your page width */
+  max-width: 800px;
   display: flex;
-  justify-content: center; /* center nav items horizontally */
-  gap: 20px; /* space between links */
+  justify-content: center;
+  gap: 20px;
 }
 
 nav ul li {
@@ -28,27 +30,26 @@ nav ul li a {
   padding: 10px 15px;
 }
 
-/* Center FAQ only */
+/* ======= FAQ LAYOUT ======= */
 .faq-center-wrapper {
   display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center;     /* vertical center */
-  min-height: 80vh;        /* height for vertical centering */
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
   text-align: center;
   padding: 0 20px;
 }
 
+/* ======= ACCORDION CONTAINER ======= */
 .accordion-container {
   width: 100%;
-  max-width: 600px; /* limits accordion max width */
+  max-width: 600px;
   background: white;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
 
-/* Keep your other accordion styles as is */
-.accordion-container {
+  /* Repeated styles below—merge for clarity */
   max-width: 700px;
   margin: 40px auto;
   font-family: Arial, sans-serif;
@@ -58,6 +59,7 @@ nav ul li a {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* ======= ACCORDION HEADING AND DETAILS ======= */
 .accordion-container h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -84,9 +86,9 @@ nav ul li a {
   color: #004aad;
 }
 
-/* Add a caret/arrow before summary */
+/* ======= ACCORDION ICONS ======= */
 .accordion-container summary::before {
-  content: "\25B6"; /* Right-pointing arrow */
+  content: "\25B6";
   position: absolute;
   left: 0;
   top: 50%;
@@ -95,11 +97,11 @@ nav ul li a {
   color: #004aad;
 }
 
-/* Rotate arrow when open */
 .accordion-container details[open] summary::before {
   transform: translateY(-50%) rotate(90deg);
 }
 
+/* ======= ACCORDION PARAGRAPH ======= */
 .accordion-container p {
   margin-top: 10px;
   color: #333;
