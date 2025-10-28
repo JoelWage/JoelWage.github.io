@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 0px; /* keeps content below fixed navbar */
+  color: #000000;
 }
 
 h1 {
@@ -92,7 +93,7 @@ nav a.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 25px;
@@ -157,7 +158,7 @@ td {
 
 
 th {
-  background: #e8f0ff;
+  background: #ffffff;
 }
 
 .sufficient {
